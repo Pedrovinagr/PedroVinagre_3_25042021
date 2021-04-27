@@ -1,0 +1,67 @@
+/*variable
+:root*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.footer__logo{
+    font-family: 'Shrikhand', 'cursive', sans-serif;
+}
+
+
+/*Footer*/
+.footer{
+    background-color: #353535;
+    color: white;
+    padding: 20px;
+}
+footer ul{
+    list-style-type: none;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer li{
+    margin-bottom: 10px;
+    margin-left: -40px;
+}
+
+
+.fa-map-marker-alt{
+    margin-right: 20px;
+}
+
+.tuto__steps{
+    display: flex;
+    flex-direction: column;
+}
+.tuto__step{
+    padding: 1.5rem;
+    margin: 1rem 0 1rem .75rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    display: flex;
+    position: relative;
+    width: max-content;
+}
+.tuto__step:before {
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    background: #9356dc;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    left: -.75rem;
+}
+ol {
+    list-style-type: decimal;
+}
+
+
