@@ -116,6 +116,12 @@ footer li{
     margin-left: -40px;
 }
 
+.fa-utensils{
+    padding-right: 1.1rem;
+}
+.fa-hands-helping{
+    padding-right: .55rem;
+}
 
 .fa-map-marker-alt{
     margin-right: 20px;
@@ -153,4 +159,11 @@ ol {
     list-style-type: decimal;
 }
 
-
+.menu__like--bg{
+    text-align: center;
+    background-color: #686868;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
