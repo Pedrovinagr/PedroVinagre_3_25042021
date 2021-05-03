@@ -1,10 +1,16 @@
-/*variable*/
-
+/*----------------------------------------VARIABLE----------------------------------*/
 :root{
     --primary: #9356dc;
     --secondary: #ff79da;
     --tertiary: #99e2d0;
+    --footer: #353535;
+    --nouveau: #1b6150;
+    --tracking:#EAEAEA;
+    --section: #F6F6F6;
+    --btn_image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9))
+
 }
+/*----------------------------------------------------------------------------------*/
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 
@@ -93,7 +99,7 @@ body,html{
     display:flex;
     justify-content:center;
     padding:1.25rem 1rem;
-    background-color:#EAEAEA;
+    background-color:var(--tracking);
     font-size:1.2rem;
     position:relative;
 }
@@ -108,7 +114,7 @@ body,html{
 .search{
     padding:2rem;
     text-align:center;
-    background-color:#F6F6F6;
+    background-color:var(--section);
 }
 .search_title{
     margin:0
@@ -125,7 +131,7 @@ body,html{
     border-radius:100px;
     color:#fff;
     background-color:#686868;
-    background-image:linear-gradient(0deg,var(--primary),var(--secondary));
+    background-image:var(--btn_image);
     cursor:pointer;
     transition-duration:.25s;
     box-shadow:.25rem .25rem 10px rgba(0,0,0,.25);
@@ -158,7 +164,7 @@ body,html{
     margin: 1rem 0 1rem .75rem;
     box-shadow:.25rem .25rem .5rem rgba(0,0,0,.125);
     border-radius:1.25rem;
-    background-color:#f6f6f6;
+    background-color:var(--section);
     display:flex;
     position:relative;
 }
@@ -199,7 +205,7 @@ body,html{
 
 /*----------------------------------------SECTION RESTAURANTS----------------------------------*/
 .restaurants{
-    background-color:#f6f6f6;
+    background-color:var(--section);
     padding:2rem 1rem 4rem 1rem;
 }
 
@@ -230,7 +236,7 @@ body,html{
 
 .card_badge{
     background-color:var(--tertiary);
-    color:#1b6150;
+    color: var(--nouveau);
     padding:.5rem;
     border-radius:.125rem;
     position:absolute;
@@ -292,7 +298,7 @@ body,html{
     opacity:0;
     transition:.5s;
     content:"";
-    background:linear-gradient(0deg,var(--primary),var(--secondary))
+    background:var(--btn_image)
 }
 
 .menu_btn:before,.menu_like{
@@ -305,7 +311,7 @@ body,html{
 
 .menu_like{
     transition-duration:.25s;
-    background-color:#f6f6f6;
+    background-color:var(--section);
     display:flex;
     align-items:center;
     justify-content:center;
@@ -318,7 +324,7 @@ body,html{
 
 /*----------------------------------------FOOTER----------------------------------*/
 .footer{
-    background-color:#353535;
+    background-color:var(--footer);
 }
 
 .footer .container{
@@ -388,7 +394,7 @@ body,html{
     color:#000
 }
 
-.heroImg{
+.restaurant_img{
     max-width:100%;
     max-height:32rem;
     width:100%;
@@ -399,7 +405,7 @@ body,html{
 .menu{
     margin-top:-4rem;
     border-radius:2rem 2rem 0 0;
-    background-color:#f6f6f6;
+    background-color:var(--section);
     z-index:1;
     position:relative;
 }
@@ -435,7 +441,7 @@ body,html{
     opacity:0;
     transition:.5s;
     content:"";
-    background:linear-gradient(0deg,var(--primary),var(--secondary))
+    background:var(--btn_image)
 }
 
 .menu_btn:before,.menu_like{
@@ -448,7 +454,7 @@ body,html{
 
 .menu_like{
     transition-duration:.25s;
-    background-color:#f6f6f6;
+    background-color:var(--section);
     display:flex;
     align-items:center;
     justify-content:center;
@@ -486,7 +492,7 @@ body,html{
     bottom:0
 }
 
-.menuItem{
+.menu-item{
     background-color:#fff;
     padding:1rem;
     display:flex;
@@ -509,28 +515,28 @@ body,html{
     max-width:100%
 }
 
-.menuItem_header{
+.menu-item_header{
     flex:1
 }
 
-.menuItem_header,.menuItem_title{
+.menu-item_header,.menu-item_title{
     white-space:nowrap;
     text-overflow:ellipsis;
     overflow:hidden
 }
 
-.menuItem_title{
+.menu-item_title{
     margin:0
 }
 
-.menuItem_description{
+.menu-item_description{
     margin:0;
     white-space:nowrap;
     text-overflow:ellipsis;
     overflow:hidden
 }
 
-.menuItem_price{
+.menu-item_price{
     font-weight:700;
     display:flex;
     justify-content:flex-end;
@@ -538,7 +544,7 @@ body,html{
     padding-left:.5rem
 }
 
-.menuItem_confirmation{
+.menu-item_confirmation{
     background-color:var(--tertiary);
     margin:-1rem -5rem -1rem 1rem;
     width:4rem;
@@ -548,11 +554,11 @@ body,html{
     transition-duration:.5s
 }
 
-.menuItem:hover .menuItem_confirmation{
+.menu-item:hover .menu-item_confirmation{
     margin-right:-1rem
 }
 
-.menuItem_wrapIcon{
+.menu-item_choice{
     height:1.6rem;
     width:1.6rem;
     background-color:#fff;
@@ -564,11 +570,11 @@ body,html{
     transition-duration:.5s
 }
 
-.menuItem:hover .menuItem_wrapIcon{
+.menu-item:hover .menu-item_choice{
     transform:rotate(0)
 }
 
-.menuItem_icon{
+.menu-item_icon{
     color:var(--tertiary)
 }
 
@@ -624,7 +630,7 @@ body,html{
     border-radius:100px;
     color:#fff;
     background-color:#686868;
-    background-image:linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    background-image:var(--btn_image);
     transition-duration:.25s;
     box-shadow:.25rem .25rem 10px rgba(0,0,0,.25);
     cursor:pointer
@@ -663,7 +669,7 @@ body,html{
         column-gap:1rem
     }
     .restaurants{
-        width: 1280px;
+        max-width: 1280px;
         margin: auto;
         border-radius:2rem 2rem 2rem 2rem;
         margin-bottom: 2rem;
